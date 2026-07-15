@@ -1,0 +1,83 @@
+# -- Main Menu --
+# Menu utama ditampilkan di header bagian atas halaman.
+
+[[main]]
+  name = "AI"
+  pageRef = "ai"
+  weight = 10
+
+[[main]]
+  name = "Tutorials"
+  pageRef = "tutorials"
+  weight = 20
+
+[[main]]
+  name = "Linux"
+  pageRef = "linux"
+  weight = 30
+
+[[main]]
+  name = "Server"
+  pageRef = "server"
+  weight = 40
+
+[[main]]
+  name = "Docker"
+  pageRef = "docker"
+  weight = 50
+
+[[main]]
+  name = "Database"
+  weight = 60
+
+[[main]]
+  name = "MariaDB"
+  parent = "Database"
+  pageRef = "mariadb"
+  weight = 10
+
+[[main]]
+  name = "SQLite"
+  parent = "Database"
+  pageRef = "sqlite"
+  weight = 20
+
+[[main]]
+  name = "Runtime"
+  weight = 70
+
+[[main]]
+  name = "Bun"
+  parent = "Runtime"
+  pageRef = "bun"
+  weight = 10
+
+[[main]]
+  name = "Node.js"
+  parent = "Runtime"
+  pageRef = "nodejs"
+  weight = 20
+
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 80
+
+
+# -- Footer Menu --
+# Menu footer ditampilkan di bagian bawah halaman.
+
+[[footer]]
+  name = "Privacy"
+  pageRef = "privacy"
+  weight = 10
+
+[[footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 20
+
+[[footer]]
+  name = "Categories"
+  pageRef = "categories"
+  weight = 30

@@ -1,0 +1,13 @@
+/* Custom CSS for Blog GezyTech */
+/* Override tema Blowfish di sini */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Consistent font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

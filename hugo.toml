@@ -1,9 +1,0 @@
-baseURL = "https://blog.gezytech.web.id/"
-defaultContentLanguage = "id"
-title = "Blog GezyTech"
-theme = "blowfish"
-
-[languages.id]
-label = "Bahasa Indonesia"
-locale = "id-ID"
-weight = 1

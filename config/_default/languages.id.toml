@@ -1,0 +1,26 @@
+disabled = false
+locale = "id-ID"
+label = "Bahasa Indonesia"
+weight = 1
+title = "Blog GezyTech"
+
+[params]
+  displayName = "ID"
+  isoCode = "id"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "icons/logo.svg"
+  secondaryLogo = "icons/secondary-logo.svg"
+  description = "Blog teknologi GezyTech - AI, Linux, Server, Docker, dan lainnya."
+  copyright = "© 2026 GezyTech. All rights reserved."
+
+  [params.author]
+    name = "GezyTech"
+    email = "info@gezytech.web.id"
+    image = "img/favicon.svg"
+    imageQuality = 96
+    headline = "Blog Teknologi AI & Linux"
+    bio = "Menulis tentang AI, Linux, Server, Docker, dan teknologi lainnya."
+    links = [
+      { github = "https://github.com/pgun" },
+    ]

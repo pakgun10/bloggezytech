@@ -1,4 +1,6 @@
 .hugo_build.lock
 *.deb
-
-
+/public/
+/resources/_gen/
+/themes/blowfish/
+/node_modules/
