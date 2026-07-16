@@ -1,13 +1,122 @@
 /* Custom CSS for Blog GezyTech */
-/* Override tema Blowfish di sini */
+
+/* ============================================
+   Responsive Font & Mobile Fixes
+   ============================================ */
 
 /* Smooth scrolling */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Consistent font rendering */
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive font sizing — lebih besar di mobile */
+@media (max-width: 640px) {
+    body {
+        font-size: 18px; /* Tailwind text-lg di mobile */
+        line-height: 1.7;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.25rem !important;
+    }
+
+    h3 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Container padding dikurangi agar konten lebih lebar */
+    .max-w-7xl {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+}
+
+/* ============================================
+   Prevent Horizontal Overflow
+   ============================================ */
+
+/* Pastikan semua gambar tidak melebihi container */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Code blocks — bungkus teks panjang, jangan overflow */
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+code {
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+/* Tabel — bungkus di mobile */
+table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Long unbreakable strings — paksa wrap */
+p,
+a,
+li,
+span,
+div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* ============================================
+   Logo Responsive
+   ============================================ */
+
+/* Logo mengecil di mobile */
+@media (max-width: 640px) {
+    .logo svg {
+        width: 140px !important;
+        height: auto !important;
+    }
+}
+
+/* ============================================
+   Category & Tag Badges
+   ============================================ */
+
+/* Tag badges — bungkus teks panjang */
+.badge,
+.tag,
+[class*="badge"],
+[class*="tag"],
+a[href*="/tags/"],
+a[href*="/categories/"] {
+    white-space: normal !important;
+    word-break: break-word;
+}
+
+/* ============================================
+   Footer Mobile
+   ============================================ */
+
+@media (max-width: 640px) {
+    footer .flex,
+    footer .flex-row {
+        flex-direction: column !important;
+        gap: 0.5rem;
+        text-align: center;
+    }
 }
