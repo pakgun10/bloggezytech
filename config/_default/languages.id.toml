@@ -17,7 +17,7 @@ title = "Blog GezyTech"
   [params.author]
     name = "GezyTech"
     email = "info@gezytech.web.id"
-    image = "img/favicon.svg"
+    image = ""
     imageQuality = 96
     headline = "Blog Teknologi AI & Linux"
     bio = "Menulis tentang AI, Linux, Server, Docker, dan teknologi lainnya."
