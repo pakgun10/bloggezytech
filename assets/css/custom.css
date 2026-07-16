@@ -54,21 +54,34 @@ img {
 /* Code blocks — bungkus teks panjang, jangan overflow */
 pre {
     overflow-x: auto;
-    white-space: pre-wrap;
+    white-space: pre-wrap !important;
     word-wrap: break-word;
+    word-break: break-all;
     max-width: 100%;
 }
 
 code {
     word-break: break-all;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+    white-space: break-spaces !important;
 }
 
-/* Tabel — bungkus di mobile */
+/* Tabel — bungkus di mobile, pakai table-layout: fixed */
 table {
     display: block;
     overflow-x: auto;
     max-width: 100%;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Kolom tabel — paksa wrap, jangan sampai overflow */
+td,
+th {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal !important;
+    max-width: 50vw;
 }
 
 /* Long unbreakable strings — paksa wrap */
@@ -76,9 +89,20 @@ p,
 a,
 li,
 span,
-div {
+div,
+.prose *,
+.prose * {
     word-wrap: break-word;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* Container konten — jangan sampai overflow viewport */
+.max-w-prose,
+.prose,
+.max-w-7xl,
+.min-w-0 {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 /* ============================================
